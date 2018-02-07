@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-const tasks = ['Take out the trash!', 'Walk the dog', 'Clean the apartment', 'Read Bible', 'Don\'t be a total douche','Keep Honor Alive', 'Hang out with Annie', 'Learn ReactJS'];
+// const tasks = ['Take out the trash!', 'Walk the dog', 'Clean the apartment', 'Read Bible', 'Don\'t be a total douche','Keep Honor Alive', 'Hang out with Annie', 'Learn ReactJS'];
 
 // const element = React.createElement('ol', null,
 // tasks.map((task, index) => React.createElement('li', {key: index}, task))
@@ -55,7 +55,7 @@ const tasks = ['Take out the trash!', 'Walk the dog', 'Clean the apartment', 'Re
 class Title extends Component {
     render() {
         return(
-            <h1>THIS IS THE TITLE</h1>
+            <h1>{this.props.title}</h1>
         )
     }
 }
@@ -63,7 +63,7 @@ class Title extends Component {
 class Paragraph extends Component {
     render() {
         return(
-            <p>here is my task list</p>
+            <p>{this.props.paragraph}</p>
         )
     }
 }
@@ -72,7 +72,8 @@ class Paragraph extends Component {
 class TasksLoop extends Component {
     render() {
         return(
-            tasks.map((task, index) => <li key = {index}>{task}</li>)
+            <ul>{this.props.tasks.map((task, index) => <li key = {index}>{task}</li>)}</ul>
+
         )
     }
 }
@@ -81,9 +82,10 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <Title/>
-                <Paragraph/>
-                <TasksLoop/>
+                <Title title = {'ToDo\'s List'}/>
+                <Paragraph paragraph = {'this is a new paragraph using the props '}/>
+                <TasksLoop tasks = {['test', 'testtwo']}/>
+                <TasksLoop tasks = {['Bring in the trash from the alley!', 'get a haircut']}/>
             </div>
         )
     }
