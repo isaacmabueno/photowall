@@ -1,7 +1,7 @@
 // importing the React library such that we are given access to this libraries methods from this variable "react"
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Main from './Components/Main'
+import Main from './Components/Main.js'
 
 // const tasks = ['Take out the trash!', 'Walk the dog', 'Clean the apartment', 'Read Bible', 'Don\'t be a total douche','Keep Honor Alive', 'Hang out with Annie', 'Learn ReactJS'];
 
