@@ -17,9 +17,15 @@ h1 {
     flex-wrap: wrap;
 }
 
-figure {
+.figure {
     flex-basis: calc(33.3333% - 4rem);
     border: 1px solid #000;
     padding: 2em;
     flex-grow: 1;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.photo {
+    width: calc(100% + 4rem);
+    margin: -2rem 0 0 -2rem;
 }
