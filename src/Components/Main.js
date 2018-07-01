@@ -22,7 +22,7 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <Title title= {'PhotoWall'}/>
+                <Title title= {'React Photo'}/>
                 <PhotoWall posts = {posts}/>
             </div>
         )
