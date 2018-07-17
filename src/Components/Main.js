@@ -15,7 +15,7 @@ const posts = [{
  }, {
  id: "2",
  description: "On a vacation!",
- imageLink: "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/08/24/104670887-VacationExplainsTHUMBWEB.1910x1000.jpg"
+ imageLink: "http://junkee.com/wp-content/uploads/hijacked/33ca0ab0c21c.jpg"
  }]
 
 class Main extends Component {
